@@ -59,7 +59,7 @@
 <body>
 
 <div class="lock-container">
-    <h2>국세청
+    <h2>관세청
     <p>비밀번호를 입력하여 접속하세요.<br>*네이버 플레이스 예약창 요청사항에 본인의 소속과 비밀번호를 적어주세요*</p>
     
     <input type="password" id="passwordInput" placeholder="비밀번호 입력">
@@ -70,10 +70,9 @@
     function checkPassword() {
         const password = document.getElementById('passwordInput').value;
         
-        // 내가 설정할 비밀번호 (예: 1234)
-        if (password === '1212') { 
+        if (password === '0125') { 
             // 비밀번호가 맞을 때 이동할 진짜 페이지 주소
-            window.location.href = 'https://naver.com'; 
+            window.location.href = 'https://map.naver.com/p/search/%EC%84%B8%EC%83%81%EC%97%90%ED%95%98%EB%82%98%EB%BF%90%EC%9D%B8%EC%B9%98%EA%B3%BC/place/34347279?placePath=%3FabtExp%3DNEW-PLACE-SEARCH%253A6%26bk_query%3D%25EC%2584%25B8%25EC%2583%2581%25EC%2597%2590%25ED%2595%2598%25EB%2582%2598%25EB%25BF%2590%25EC%259D%25B8%25EC%25B9%2598%25EA%25B3%25BC%26entry%3Dpll%26from%3Dnx%26fromNxList%3Dtrue&placeSearchOption=abtExp%3DNEW-PLACE-SEARCH%253A6%26bk_query%3D%25EC%2584%25B8%25EC%2583%2581%25EC%2597%2590%25ED%2595%2598%25EB%2582%2598%25EB%25BF%2590%25EC%259D%25B8%25EC%25B9%2598%25EA%25B3%25BC%26entry%3Dpll%26fromNxList%3Dtrue%26originalQuery%3D%25EC%2584%25B8%25EC%2583%2581%25EC%2597%2590%25ED%2595%2598%25EB%2582%2598%25EB%25BF%2590%25EC%259D%25B8%25EC%25B9%2598%25EA%25B3%25BC%26x%3D127.383585%26y%3D36.353850&searchType=place'; 
         } else {
             alert('비밀번호가 올바르지 않습니다.');
         }
